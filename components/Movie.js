@@ -1,5 +1,4 @@
-import axios from 'axios'
-import Link from 'next/Link'
+import axios from 'axios';
 
 
 
@@ -14,7 +13,7 @@ export const Movie = ({movie}) =>{
         }
      
           return (
-                    <Link href=''>
+                    <div>
                             <div className='relative rounded lg:h-28  h-[150px] min-w-[130px] text-white lg:h-[150px] lg:min-w-[150px]' 
                                 key={movie.id}
                                 onClick={getMovieDetail(movie.id)}
@@ -30,6 +29,6 @@ export const Movie = ({movie}) =>{
                                     />
                                 </div>       
                             </div>
-                    </Link>
+                    </div>
           )
 }
